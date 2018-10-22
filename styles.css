@@ -1,0 +1,50 @@
+body{
+	font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+}
+.menu-container ul{
+    list-style: none;
+    background-color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+            
+}
+.menu-container li{
+    font-size: 1.2em;
+    line-height: 40px;
+    height: 40px;
+    
+    margin-right: -4px;
+    display: inline-block;
+    width: 110px;
+}
+.menu-container a{
+    text-decoration: none;
+    color: black;
+    transition: .3s background-color;
+    display: block;
+    
+    
+}
+.menu-container a:hover {
+    background-color: lightgray;
+    color: white;
+    border-bottom: 1px solid #888;
+    cursor: default;
+}
+.menu-container a.active {
+    color: black;
+    background-color: white;
+    cursor: default;
+}
+@media screen and  (min-width: 600px){
+    .menu-container li{
+        width: 120px;
+        line-height: 50px;
+        border-bottom: none;
+        height: 50px;
+    }
+}
