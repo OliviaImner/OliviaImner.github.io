@@ -1,0 +1,98 @@
+<!doctype html><!-- Det här är huvudsidan/startsidan. Detta html dokument innehåller först en header med rubrik och en underrubrik. Därefter är det min klass med en dropdown meny. Sidan innehåller olika divs som ihop blir en bildvisare med navigeringsknappar. En footer avslutar sidan som finns på varje sida. Sist kommer länkarna till övrig kod. -->
+
+<html lang="sv">
+    <head>
+	<!--länk till css samt sätter titeln-->
+        <meta charset= "UTF-8">
+	       <title> Hem </title>
+            <link rel="stylesheet" href="styles_home.css">
+                <script src="http://code.jquery.com/jquery-1.6.3.min.js"></script>
+                <script src="main.js"></script>
+    </head>
+    <body> 
+        <!-- sidinfo -->
+        <div class ="header">
+            <div class ="nav">
+                	<!-- meny -->
+                <ul class="menu-bar">
+                    <li class="home"><a href="home.html">Hem</a></li>
+                    <li class="pics"><a href="pics.html">Bilder</a></li>
+                    <li class="me"><a href="me.html">Om mig</a></li>
+                    <li class="contact"><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </div>
+            	<!--rubrik med info om hemsidan-->
+            <h2>Välkommen till min hemsida! Här kommer du få veta mer om överlevnad i vildmarken </h2>
+            </div>
+            <section>
+                <div class="info-site">
+                <!--Paragraf med info -->
+                <p>Djur och natur är något som värdesätt och ska tas hand om! </p>
+                    
+                </div>
+            </section>
+        	<!--Paradox med bild-->
+            <section>
+                <div class= "paradox-img2">
+                       <div class="caption">
+                    </div>
+                </div>
+            </section>
+            
+            <section>
+                <div class="paradox-img1">
+                    <div class="caption">
+                        	<!--En border med mitt namn-->
+                        <div class="info-site">
+                            <span class="border"> OLIVIA </span>
+                        </div> 
+                    </div>
+                </div>
+            </section>
+          	<!--Footer med textfält för ifyllnad av premunation av nyhetsmail-->
+        <footer> 
+            <div id="footer-main">
+                <div class="footer-wrapper">
+                    <div class="footer-newsletter cf">
+                    <div class="subscribe-form">
+                        <p> Prenumerera på nyhetsbrevet!</p>
+                         <form name="form_newsletter" id="frm_newsletter" class="form_newsletter" action="#" method="post">
+                            <div class="form-group">
+                            <!--Textfältet för namn-->
+                                <input type="text" name="newl_name" id="newl_name" placeholder="Namn" class="input_grey">
+                                <div id="name_mess" class="grey" style="display: none;">Skriv in ditt namn</div>
+                            </div>
+                            <div class="form-group">
+                             <!--Textfältet för mail-->
+                                <input type="text" name="newl_mail" id="nl_mail" placeholder="Mail">
+                                <div id="mail_mess"></div><div id="newl_mail" class="grey">Oj! Vi behöver din mail för att dela äventyren.</div>
+                            </div>
+                             <!--Knapp för att premunera-->
+                            <div class="form-submit">
+                                <input type="hidden" name="nl_list_name" id="nl_list_name" value="Subscriber">
+                                <button title="Subscribe" type="submit">Premunera<i></i></button>
+                                <input type="reset" name="reset1" id="reset1" style="display:none">
+                            </div>
+                            <div class="form-group">
+                                <div id="successmsg1" class="successmsg"></div>
+                                <div id="errormsg1" class="errormsg"></div>
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+                    <!--Menylista i footer -->
+                    <nav class="footer-nav" id=" nav-id">
+                    <h3> Länkar</h3>
+                    <ul>
+                        <li class="home"><a href="home.html">Hem</a></li>
+                        <li class="video"><a  href="#">Videos</a></li>
+                        <li class="about"><a href="#">Om oss</a></li>
+                        <li class="news"><a href="news.html">Nyheter</a></li>
+                    </ul>
+                    </nav>
+                    
+                </div>
+            </div>
+        </footer> 
+    </body>
+</html> 
