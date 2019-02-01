@@ -19,6 +19,7 @@ p{
     color: #225b3a;
     padding: 47px;
 }
+/*Rubriker*/
 h1{
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -55,10 +56,13 @@ form{
 	box-sizing: border-box;
 }
 /*huvuddel*/
-.header{
+.header {
     width: 100%;
+}
+#head_id{ 
     height: 800px;
 }
+
 /*menu*/
 .nav .menu-bar{
     width: 100%;
@@ -351,5 +355,11 @@ img {
     position: relative;
     margin-right: auto;
     margin-left: auto;
+}
+/*Kontaktformulär*/
+#contact{
     
+	text-align: center;
+	font-family: 'patua_oneregular', arial, sans-serif;
+	font-size: 20px;
 }
