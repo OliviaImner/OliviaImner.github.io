@@ -1,13 +1,13 @@
-<!doctype html><!-- Det här är huvudsidan/startsidan. Detta html dokument innehåller först en header med rubrik och en underrubrik. Därefter är det min klass med en dropdown meny. Sidan innehåller olika divs som ihop blir en bildvisare med navigeringsknappar. En footer avslutar sidan som finns på varje sida. Sist kommer länkarna till övrig kod. -->
+<!doctype html><!-- Denna sida är startsidan för min hemsida. Det här html dokument innehåller först en header med rubrik. Min klass "header" presenterar en meny. Därefter kommer en <h2> rubrik angående information om sidan. I dokumentet visas en en paragraf med information och den gör också att den bryter av för att en bild som finns i ett parallax kommer efter. Parallaxen visar inte hela bilen utan det görs när användaren scrollar nedåt. Efter parallax bilden finns en border som representerar mitt namn. Sidan avslutas med en footer som innehåller formulär som användaren ska fylla i om de vill premunera på nyhetsbrev och en menylista som navigerar en till de olika sidorna. I framtiden kan det läggas till en lista för inskickade mailadresser.
+-->
 
 <html lang="sv">
     <head>
 	<!--länk till css samt sätter titeln-->
         <meta charset= "UTF-8">
 	       <title> Hem </title>
-            <link rel="stylesheet" href="styles_home.css">
-                <script src="http://code.jquery.com/jquery-1.6.3.min.js"></script>
-                <script src="main.js"></script>
+            <link rel="stylesheet" href="styles.css">
+               
     </head>
     <body> 
         <!-- sidinfo -->
@@ -34,11 +34,9 @@
         	<!--Paradox med bild-->
             <section>
                 <div class= "paradox-img2">
-                       <div class="caption">
-                    </div>
                 </div>
             </section>
-            
+        
             <section>
                 <div class="paradox-img1">
                     <div class="caption">
@@ -55,27 +53,25 @@
                 <div class="footer-wrapper">
                     <div class="footer-newsletter cf">
                     <div class="subscribe-form">
-                        <p> Prenumerera på nyhetsbrevet!</p>
-                         <form name="form_newsletter" id="frm_newsletter" class="form_newsletter" action="#" method="post">
+                     <p> Prenumerera på nyhetsbrevet!</p>
+                         
+                        <form name="form_newsletter" id="frm_newsletter" class="form_newsletter" action="#" method="post">
                             <div class="form-group">
-                            <!--Textfältet för namn-->
+                                
+                            <!--Textfältet för namn--> 
                                 <input type="text" name="newl_name" id="newl_name" placeholder="Namn" class="input_grey">
                                 <div id="name_mess" class="grey" style="display: none;">Skriv in ditt namn</div>
                             </div>
                             <div class="form-group">
+                                
                              <!--Textfältet för mail-->
-                                <input type="text" name="newl_mail" id="nl_mail" placeholder="Mail">
-                                <div id="mail_mess"></div><div id="newl_mail" class="grey">Oj! Vi behöver din mail för att dela äventyren.</div>
+                                <input type="text" name="newl_mail" id="newl_mail" placeholder="Mail">
+                                <div id="mail_mess" class="grey" style="display: none;">Skriv in din mail för att få del av äventyren.</div>
                             </div>
+                            
                              <!--Knapp för att premunera-->
-                            <div class="form-submit">
-                                <input type="hidden" name="nl_list_name" id="nl_list_name" value="Subscriber">
-                                <button title="Subscribe" type="submit">Premunera<i></i></button>
-                                <input type="reset" name="reset1" id="reset1" style="display:none">
-                            </div>
-                            <div class="form-group">
-                                <div id="successmsg1" class="successmsg"></div>
-                                <div id="errormsg1" class="errormsg"></div>
+                            <div class="form-submit">     
+                                <button title="Subscribe" type="submit"  id = "sub_validate" value="Validate" >Prenumerera<i></i></button>   
                             </div>
                         </form>
                     </div>
@@ -85,14 +81,17 @@
                     <h3> Länkar</h3>
                     <ul>
                         <li class="home"><a href="home.html">Hem</a></li>
-                        <li class="video"><a  href="#">Videos</a></li>
-                        <li class="about"><a href="#">Om oss</a></li>
-                        <li class="news"><a href="news.html">Nyheter</a></li>
+                        <li class="pics"><a  href="pics.html">Bilder</a></li>
+                        <li class="me"><a href="me.html">Om mig</a></li>
+                        <li class="contact"><a href="contact.html">Kontakt</a></li>
                     </ul>
                     </nav>
                     
                 </div>
             </div>
         </footer> 
+        <!--Länkar till javascriptkod-->
+        <script src="http://code.jquery.com/jquery-1.6.3.min.js"></script>
+        <script src="message.js"></script>
     </body>
 </html> 

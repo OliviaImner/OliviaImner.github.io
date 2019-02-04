@@ -1,16 +1,17 @@
-<!doctype html>
-
+<!doctype html><!--Det här html dokument innehåller först en header med rubrik. Min klass "header" presenterar en meny. Sidan innehåller flera <div> som bildar en bildvisare med navigeringsknappar. En paragraf beskriver de olika bilderna som visas i bildvisaren. En footer avslutar sidan, med att fylla i om man vill premunera på nyhetsbrev och också en menylista som navigerar en till de olika sidorna-->
 
 <html lang="sv">
     <head>
         <meta charset= "UTF-8">
 	       <title> Bilder </title>
-            <link rel="stylesheet" href="styles_home.css">
+            <link rel="stylesheet" href="styles.css">
              
     </head>
     <body> 
+        <!-- sidinfo -->
         <div class ="header">
             <div class ="nav">
+                <!-- Menyn -->
                 <ul class="menu-bar">
                     <li class="home"><a href="home.html">Hem</a></li>
                     <li class="pics"><a href="pics.html">Bilder</a></li>
@@ -19,8 +20,8 @@
                 </ul>
             </div>
         <p>Här visas bilder från mina resor
-       Bild 1 är i Georgien 2015 och bakgrunden visas berget Uzba.
-        Bild 2 visar nedgången från Das Schilthorn i Schweiz 2014. Bild 3 visar bergen i Schweiz. Bild 4 visar flerfagars tur i Roslagen Norrtälje, 2016 och Bild 5 visar Tjaktjajaure, Jokkmokk 2017</p>
+       1/5: Georgien 2015 camping vid berget Ushba.
+        2/5: Nedgången från Das Schilthorn i Schweiz 2014. 3/5: Bergen i Schweiz. 4/5: Flerdagarstur i Roslagen Norrtälje, 2016. 5/5: Tjaktjajaure, Jokkmokk 2017</p>
 
 	<!-- Bildvisaren uppdelad i olika element. -->
 	<div class="container">
@@ -40,7 +41,9 @@
 		<div class="photo fade">
 			<div class="pic-nr">3/5</div>
 			<img src="pics/IMG3.jpg" alt="pic3">
-
+            <br>
+            <br>
+            <br>
 		</div>
 
 		<div class="photo fade">
@@ -52,15 +55,64 @@
 		<div class="photo fade">
 			<div class="pic-nr" id="pic5">5/5</div>
 			<img src="pics/IMG5.jpg" alt="pic5">
-
+            <br>
+            <br>
+            <br>
+            <br>
 		</div>
 		<!-- Nästa och före knapp -->
 		<a class="prev" onclick="nextpic(-1)">&#10094;</a>
 		<a class="next" onclick="nextpic(1)">&#10095;</a>
 	</div>
     </div>
-
-    <script src="http://code.jquery.com/jquery-1.6.3.min.js"></script>
-    <script src="main.js"></script>
+        <br>
+        <br>
+          	<!--Footer med textfält för ifyllnad av premunation av nyhetsmail-->
+        <footer> 
+            <div id="footer-main">
+                <div class="footer-wrapper">
+                    <div class="footer-newsletter cf">
+                    <div class="subscribe-form">
+                     <p> Prenumerera på nyhetsbrevet!</p>
+                         
+                        <form name="form_newsletter" id="frm_newsletter" class="form_newsletter" action="#" method="post">
+                            <div class="form-group">
+                                
+                            <!--Textfältet för namn--> 
+                                <input type="text" name="newl_name" id="newl_name" placeholder="Namn" class="input_grey">
+                                <div id="name_mess" class="grey" style="display: none;">Skriv in ditt namn</div>
+                            </div>
+                            <div class="form-group">
+                                
+                             <!--Textfältet för mail-->
+                                <input type="text" name="newl_mail" id="newl_mail" placeholder="Mail">
+                                <div id="mail_mess" class="grey" style="display: none;">Skriv in din mail för att få del av äventyren.</div>
+                            </div>
+                            
+                             <!--Knapp för att premunera-->
+                            <div class="form-submit">     
+                                <button title="Subscribe" type="submit"  id = "sub_validate" value="Validate" >Prenumerera<i></i></button>   
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+                    <!--Menylista i footer -->
+                    <nav class="footer-nav" id=" nav-id">
+                    <h3> Länkar</h3>
+                    <ul>
+                        <li class="home"><a href="home.html">Hem</a></li>
+                        <li class="pics"><a  href="pics.html">Bilder</a></li>
+                        <li class="me"><a href="me.html">Om mig</a></li>
+                        <li class="contact"><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                    </nav>
+                    
+                </div>
+            </div>
+        </footer> 
+        <!--Länkar till javascriptkod-->
+        <script src="http://code.jquery.com/jquery-1.6.3.min.js"></script>
+        <script src="message.js"></script>
+        <script src="photo.js"></script>
     </body>
 </html> 

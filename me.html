@@ -1,16 +1,16 @@
 <!doctype html>
-<!-- Detta html dokument innehåller först en header med rubrik och en underrubrik. Denna sida innehåller en kort beskrivning om mig i en paragraf <p>. En footer avslutar sidan som finns på varje sida. Sist kommer länkarna till övrig kod. -->
+<!-- Detta html dokument innehåller först en header med rubrik. Min klass "header" presenterar en meny. Denna sida innehåller en kort beskrivning om mig i en paragraf <p> och ett foto i klassen "photo". En footer avslutar sidan, med att fylla i om man vill premunera på nyhetsbrev och också en menylista som navigerar en till de olika sidorna-->
 <html lang="sv">
     <head>
         <meta charset= "UTF-8">
-	       <title> Nyheter </title>
-            <link rel="stylesheet" href="styles_home.css">
-                <script src="http://code.jquery.com/jquery-1.6.3.min.js"></script>
-                <script src="main.js"></script>
+	       <title> Om mig </title>
+            <link rel="stylesheet" href="styles.css">
     </head>
     <body> 
+        <!-- sidinfo -->
         <div class ="header">
             <div class ="nav">
+                <!--Menyn-->
                 <ul class="menu-bar">
                     <li class="home"><a href="home.html">Hem</a></li>
                     <li class="pics"><a href="pics.html">Bilder</a></li>
@@ -19,11 +19,61 @@
                 </ul>
             </div>
                 <p>
-                   Olivia heter jag och är intresserad av att berätta om mina äventyr för dig. 
+                   Olivia är mitt namn och på min hemsida kommer jag dela mina äventye med dig. Under några år nu har jag börjat gilla att vara i naturen. Speciellt gillar jag att vandra i bergen eller paddla kajak. Att vara aktiv är något som jag värdesätter och att samtidigt vara i skog och mark gör livet ännu bättre. 
                 </p>
-                <div class="photo fade" id="my_photo" >
+                <div class="photo" id="my_photo" >
 			 	     <img src="pics/Olivia.jpg">
-		        </div>
-        </div>
+		        </div>               	
+        </div> 
+        <br>
+        <br>
+        <br>
+        <br>
+          	<!--Footer med textfält för ifyllnad av premunation av nyhetsmail-->
+        <footer> 
+            <div id="footer-main">
+                <div class="footer-wrapper">
+                    <div class="footer-newsletter cf">
+                    <div class="subscribe-form">
+                     <p> Prenumerera på nyhetsbrevet!</p>
+                         
+                        <form name="form_newsletter" id="frm_newsletter" class="form_newsletter" action="#" method="post">
+                            <div class="form-group">
+                                
+                            <!--Textfältet för namn--> 
+                                <input type="text" name="newl_name" id="newl_name" placeholder="Namn" class="input_grey">
+                                <div id="name_mess" class="grey" style="display: none;">Skriv in ditt namn</div>
+                            </div>
+                            <div class="form-group">
+                                
+                             <!--Textfältet för mail-->
+                                <input type="text" name="newl_mail" id="newl_mail" placeholder="Mail">
+                                <div id="mail_mess" class="grey" style="display: none;">Skriv in din mail för att få del av äventyren.</div>
+                            </div>
+                            
+                             <!--Knapp för att premunera-->
+                            <div class="form-submit">     
+                                <button title="Subscribe" type="submit"  id = "sub_validate" value="Validate" >Prenumerera<i></i></button>   
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+                    <!--Menylista i footer -->
+                    <nav class="footer-nav" id=" nav-id">
+                    <h3> Länkar</h3>
+                    <ul>
+                        <li class="home"><a href="home.html">Hem</a></li>
+                        <li class="pics"><a  href="pics.html">Bilder</a></li>
+                        <li class="me"><a href="me.html">Om mig</a></li>
+                        <li class="contact"><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                    </nav>
+                    
+                </div>
+            </div>
+        </footer> 
+        <!--Länkar till javascriptkod-->
+        <script src="http://code.jquery.com/jquery-1.6.3.min.js"></script>
+        <script src="message.js"></script>
     </body>
 </html> 
