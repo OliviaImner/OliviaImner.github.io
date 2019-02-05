@@ -139,6 +139,7 @@ form{
     letter-spacing: 5px; 
     float: left;
     margin-left: 150px;
+    
 }
 .footer-nav li a{ 
     width: 200px;
@@ -146,6 +147,10 @@ form{
     text-decoration: none; 
     letter-spacing: 5px; 
     color: black;
+}
+.footer-sm{
+    margin-left: 800px;
+    position: relative;
 }
 /*nyhetbrevet*/
 .footer-newsletter{
@@ -158,7 +163,7 @@ form{
     color: black;
     line-height: 25px;
     margin-bottom: 10px;
-    
+    margin-left: 100px;
 }
 .form-group {
     width: 100%;
@@ -180,12 +185,13 @@ form{
     padding: 10px 15px 8px 15px;
     top: 30px;
     right: -18px;
-    width: 73%;
+    width: 75%;
     margin-left: 35px;
 }
 /*input och textfält i nyhetsformuläret och grön transition vid besök av olika webbsidor*/
 .form-group input, .form-group textarea {
     width: 75%;
+    margin-left: 100px;
     right: 10px;
     background: white;
     border-radius: 3px;
@@ -223,11 +229,11 @@ button, input, select, textarea {
 }
 /*premunera knappen*/
 .form-submit button{
-    width: 100%;
+    width: 90%;
     background: lightgrey;
     border-radius: 5px;
     letter-spacing: 5px;
-    margin-left: 35px;
+    margin-left: 100px;
     line-height: 34px;
     font-size: 18px;
     color: #000;
