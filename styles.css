@@ -1,5 +1,5 @@
 /* CSS-fil som fungerar med alla html dokumenten. */
-html, body{
+html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
@@ -9,6 +9,10 @@ html, body{
     letter-spacing: 3px;
     background-image: url(pics/fog1280.jpg);
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 ul{
     list-style-type: none;
