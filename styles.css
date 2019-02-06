@@ -9,10 +9,6 @@ html, body {
     letter-spacing: 3px;
     background-image: url(pics/fog1280.jpg);
     background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 ul{
     list-style-type: none;
@@ -62,6 +58,10 @@ form{
 /*huvuddel*/
 .header {
     width: 100%;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
 }
 /*används för home.html för att sätta höjden på bilden*/
 #head_id{ 
@@ -131,6 +131,11 @@ form{
     background-image: url(pics/footer1.png);
     width: 100%;
     float: left;
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
 }
 .footer-wrapper {
     width: 100%;
