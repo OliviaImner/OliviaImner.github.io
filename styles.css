@@ -128,14 +128,9 @@ form{
 }
 /*footer*/
 #footer-main{
-    background-image: url(pics/footer1.png);
     width: 100%;
     float: left;
-    background-repeat: no-repeat;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
+    background-image: url(pics/footer1.png);
 }
 .footer-wrapper {
     width: 100%;
