@@ -59,7 +59,6 @@ form{
     background-image: url(pics/fog1280.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     -webkit-background-size: 100% auto;
     -moz-background-size: 100% auto;
     -o-background-size: 100% auto;
@@ -192,7 +191,7 @@ form{
     top: 30px;
     right: -18px;
     width: 75%;
-    margin-left: 35px;
+    margin-left: 100px;
 }
 /*input och textfält i nyhetsformuläret och grön transition vid besök av olika webbsidor*/
 .form-group input, .form-group textarea {
@@ -352,7 +351,7 @@ img {
 #contact{
 	text-align: center;
 	font-family: 'patua_oneregular', arial, sans-serif;
-	font-size: 20px;    
+	font-size: 12px;    
     padding: 8px 10px 10px;
     border: 1px solid #2d2d2d;
     border-radius: 3px;
