@@ -7,14 +7,6 @@ html,body {
     font: 400 15px/1.8 "Lato", sans-serif;
     color: #777;
     letter-spacing: 3px;
-    background-image: url(pics/fog1280.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    -webkit-background-size: 100% auto;
-    -moz-background-size: 100% auto;
-    -o-background-size: 100% auto;
-    background-size: 100% auto ;
 }
 ul{
     list-style-type: none;
@@ -64,6 +56,14 @@ form{
 /*huvuddel*/
 .header {
     width: 100%;
+    background-image: url(pics/fog1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: 100% auto ;
 }
 /*används för index.html för att sätta höjden på bilden*/
 #head_id{ 
