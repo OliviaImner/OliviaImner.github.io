@@ -62,7 +62,8 @@ form{
     -webkit-background-size: 100% auto;
     -moz-background-size: 100% auto;
     -o-background-size: 100% auto;
-    background-size: 100% auto ;
+    background-size: 100% auto;
+    height: 100%;
 }
 /*används för index.html för att sätta höjden på bilden*/
 #head_id{ 
