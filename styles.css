@@ -56,7 +56,7 @@ form{
 /*huvuddel*/
 .header {
     width: 100%;
-    background-image: url(pics/fog1280.jpg);
+    background-image: url(https://www.dropbox.com/s/ojpdx1uxsefh3up/fog1280.jpg?raw=1);
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: 100% auto;
@@ -115,7 +115,7 @@ form{
 }
 /*bilden för parallaxen*/
 .paradox-img2 {
-    background-image: url("pics/markus-spiske.jpg");
+    background-image: url("https://www.dropbox.com/s/lwg0q44fddxipr5/markus-spiske.jpg?raw=1");
     min-height: 400px;
 }
 
@@ -132,7 +132,7 @@ form{
 #footer-main{
     width: 100%;
     float: left;
-    background-image: url(pics/footer1.png);
+    background-image: url("https://www.dropbox.com/s/igfpjal830rh4ys/footer1.png?raw=1");
 }
 .footer-wrapper {
     width: 100%;
